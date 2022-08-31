@@ -8,12 +8,12 @@ function Die(props) {
    }
 
    return (
-      <div className="die"
+      <button className="die"
          holded={props.holded.toString()}
          onClick={props.handleClick}
          style={styles}>
          {props.value}
-      </div>
+      </button>
    );
 }
 
