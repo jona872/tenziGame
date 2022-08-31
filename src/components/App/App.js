@@ -97,7 +97,7 @@ function App() {
          
          <button className="app--button" onClick={rollDice} >
             {tenzies && <Confetti width={width} height={height} />}
-            {tenzies ? "Nuevo Juego" : "Tirar"}
+            {tenzies ? "New Game" : "Roll"}
          </button>
 
       </main>
