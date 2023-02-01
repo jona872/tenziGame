@@ -96,7 +96,7 @@ function App() {
          </div>
          
          <button className="app--button" onClick={rollDice} >
-            {tenzies && <Confetti width={width} height={height} />}
+            {tenzies && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             {tenzies ? "New Game" : "Roll"}
          </button>
 
