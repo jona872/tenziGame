@@ -8,8 +8,8 @@ function App() {
    const [arrayNumbers, setArrayNumbers] = React.useState(initialSetup());
    const [tenzies, setTenzies] = React.useState(false)
    const [counter, setCounter] = React.useState(0);
-   const width = 420;
-   const height = 400;
+   // const width = 420;
+   // const height = 400;
 
    React.useEffect(() => {
       const allHeld = arrayNumbers.every(die => die.isHeld);
@@ -78,7 +78,7 @@ function App() {
 
 
    return (
-      <main className="container">
+      <main className="main">
 
          <div className="app--title" >
             <p> Tenzies </p>
@@ -94,7 +94,7 @@ function App() {
          <div className="app--body">
             {dies}
          </div>
-         
+
          <button className="app--button" onClick={rollDice} >
             {tenzies && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             {tenzies ? "New Game" : "Roll"}
